@@ -33,14 +33,14 @@ export default function Home() {
 	const [regModalOpen, setRegModalOpen] = useState(false);
 
 	return (
-		<div className="p-4">
+		<div className="p-4 anchor-container">
 			<NavBar isOpen={regModalOpen} setIsOpen={setRegModalOpen} />
 
-			<div className="rounded-xl overflow-hidden relative">
+			<div className="rounded-xl overflow-hidden relative w-full mt-7">
 				<Image
 					src={anchorMe}
 					alt="anchor-me"
-					className="w-full aspect-[1/0.7]"
+					className="w-full md:aspect-[1/0.7]"
 				/>
 				<div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black to-transparent opacity-60" />
 				<Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -165,11 +165,11 @@ export default function Home() {
 					</Button>
 				</div>
 
-				<div className="mt-7">
+				<div className="mt-7 rounded-xl overflow-hidden relative">
 					<Image
 						src={anchorTitktok}
 						alt="anchor tiktok"
-						className="w-full aspect-[1/0.8]"
+						className="w-full md:aspect-[1/0.7]"
 					/>
 				</div>
 
@@ -226,11 +226,11 @@ export default function Home() {
 					</Button>
 				</div>
 
-				<div className="mt-7">
+				<div className="mt-7 rounded-xl overflow-hidden relative w-full">
 					<Image
 						src={multinational}
 						alt="anchor multinational"
-						className="w-full aspect-[1/0.8]"
+						className="w-full md:aspect-[1/0.7]"
 					/>
 				</div>
 			</div>
@@ -264,10 +264,10 @@ export default function Home() {
 					</Button>
 				</div>
 
-				<div className="mt-7">
+				<div className="mt-7 rounded-xl overflow-hidden relative w-full">
 					<Image
 						src={selectedPackage == "silver" ? silverPackage : proPackage}
-						className="w-full aspect-[1/0.7]"
+						className="w-full md:aspect-[1/0.7]"
 						alt="package images"
 					/>
 				</div>
@@ -284,10 +284,10 @@ export default function Home() {
 					</Button>
 				</div>
 
-				<div className="mt-7">
+				<div className="mt-7 rounded-xl overflow-hidden relative w-full">
 					<Image
 						src={cac}
-						className="w-full aspect-[1/0.7]"
+						className="w-full md:aspect-[1/0.7]"
 						alt="package images"
 					/>
 				</div>
@@ -310,10 +310,10 @@ export default function Home() {
 					</Button>
 				</div>
 
-				<div className="mt-7">
+				<div className="mt-7 rounded-xl overflow-hidden relative w-full">
 					<Image
 						src={roadmap}
-						className="w-full aspect-[1/0.7]"
+						className="w-full md:aspect-[1/0.7]"
 						alt="roadmap"
 					/>
 				</div>
@@ -376,11 +376,15 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="w-[170px] mx-auto">
-				<Image src={Logo} alt="logo" className="w-full h-full aspect-[1/0.6]" />
+			<div className="w-[170px] relative h-[50px] mx-auto mt-7">
+				<Image
+					src={Logo}
+					alt="logo"
+					className="w-full h-full absolute object-cover"
+				/>
 			</div>
 
-			<div className="flex items-center justify-center">
+			<div className="flex items-center justify-center mt-7">
 				<p className="text-white text-center text-base">
 					All rights reserved @Anchor 2024
 				</p>

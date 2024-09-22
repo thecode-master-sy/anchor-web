@@ -24,6 +24,11 @@ body {
 	.text-balance {
 		text-wrap: balance;
 	}
+
+	.anchor-container {
+		width: min(100%, 60rem);
+		margin-inline: auto;
+	}
 }
 
 @layer base {

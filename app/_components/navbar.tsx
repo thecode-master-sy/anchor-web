@@ -26,8 +26,12 @@ export default function NavBar({
 }) {
 	return (
 		<nav className="flex justify-between items-center">
-			<div className="w-[170px]">
-				<Image src={Logo} alt="logo" className="w-full h-full aspect-[1/0.6]" />
+			<div className="w-[170px] relative h-[50px]">
+				<Image
+					src={Logo}
+					alt="logo"
+					className="w-full h-full absolute object-cover"
+				/>
 			</div>
 
 			<div className="hidden md:block">
@@ -51,7 +55,6 @@ export default function NavBar({
 				<DialogTrigger asChild>
 					<Button
 						onClick={() => setIsOpen(true)}
-						size="lg"
 						className="bg-white text-black gap-2 hover:bg-gray-200"
 					>
 						<UserPlus size={16} />

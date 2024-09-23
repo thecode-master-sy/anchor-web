@@ -16,6 +16,7 @@ import tiktok from "@/assets/tiktok-icon.png";
 import whatsapp from "@/assets/whatsapp-icon.png";
 import telegram from "@/assets/telegram-icon.png";
 import Logo from "@/assets/logo.png";
+import Link from "next/link";
 
 import {
 	Dialog,
@@ -384,10 +385,14 @@ export default function Home() {
 				/>
 			</div>
 
-			<div className="flex items-center justify-center mt-7">
+			<div className="flex flex-col items-center justify-center mt-7">
 				<p className="text-white text-center text-base">
 					All rights reserved @Anchor 2024
 				</p>
+
+				<Link href="/legal/privacy-policy" className="mt-4 block underline">
+					Privacy policy
+				</Link>
 			</div>
 		</div>
 	);

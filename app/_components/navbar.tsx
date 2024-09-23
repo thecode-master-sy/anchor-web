@@ -37,7 +37,7 @@ export default function NavBar({
 			<div className="hidden md:block">
 				<ul className="flex gap-7 items-center">
 					<li>
-						<a href="#home">Home</a>
+						<Link href="/">Home</Link>
 					</li>
 					<li>
 						<a href="#about">About</a>

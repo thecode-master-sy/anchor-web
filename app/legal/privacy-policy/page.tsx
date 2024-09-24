@@ -52,31 +52,6 @@ export default function PrivacyPolicy({}: {}) {
 
 				<div className="mt-4 text-white/65">
 					<span>We gather information in several ways:</span>
-
-					<h1 className="text-xl font-bold text-white mt-4">
-						Personal Information
-					</h1>
-
-					<p className="mt-4">When you set up an account, we collect:</p>
-
-					<ul className="mt-4 list-decimal px-4">
-						<li>Name </li>
-						<li>Email address</li>
-						<li>Password (secured through hashing)</li>
-						<li>Profile picture (optional)</li>
-					</ul>
-
-					<h1 className="text-xl font-bold text-white mt-4">Usage Data</h1>
-					<p className="mt-4">
-						We collect data regarding your app usage, which includes:
-					</p>
-					<ul className="mt-4 list-decimal px-4">
-						<li>Login history</li>
-						<li>Search queries</li>
-						<li>Content interactions (e.g., likes, comments)</li>
-						<li>Device information (e.g., model, operating system)</li>
-					</ul>
-
 					<h1 className="text-xl font-bold text-white mt-4">Location Data</h1>
 					<p className="mt-4">
 						We may gather location information to offer location-based features

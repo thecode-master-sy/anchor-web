@@ -97,7 +97,7 @@ export default function NavBar({
 						</div>
 
 						<Button
-							className="bg-red-800 text-white hover:bg-red-600"
+							className="bg-red-800 text-white hover:bg-red-700"
 							onClick={() => setIsOpen(false)}
 						>
 							Continue

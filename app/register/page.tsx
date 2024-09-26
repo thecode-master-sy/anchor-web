@@ -244,7 +244,7 @@ export default function Register() {
 		<StepThree setCurrentStep={setCurrentStep} />,
 	];
 	return (
-		<div className="flex flex-col gap-4 min-h-[100vh] justify-center">
+		<div className="flex flex-col gap-4 min-h-[100vh] justify-center px-4">
 			<div className="w-[170px] relative h-[50px] mx-auto">
 				<Image
 					src={Logo}

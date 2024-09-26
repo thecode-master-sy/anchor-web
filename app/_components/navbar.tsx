@@ -1,6 +1,7 @@
 import Logo from "@/assets/logo.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { ChevronsRight, UserPlus } from "lucide-react";
 import Link from "next/link";
 import {
@@ -64,26 +65,44 @@ export default function NavBar({
 				<DialogContent className="border-gray-800 bg-black">
 					<DialogHeader className="grid gap-5">
 						<DialogTitle className="text-3xl">Get Registered Now!</DialogTitle>
-						<p>
-							Message our verfied agent on whatsapp for your anchor Registration
-						</p>
-
-						<Button
-							size="lg"
-							className="bg-red-700 hover:bg-red-500 max-w-[200px]"
-							asChild
-						>
-							<a
-								href="https://wa.link/812h7w"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<span>Click here</span>
-								<ChevronsRight />
-							</a>
-						</Button>
 					</DialogHeader>
 					{/* Add your form or content here */}
+					<form className="grid gap-4">
+						<Input
+							name="firstname"
+							placeholder="enter your firstname"
+							type="text"
+						/>
+						<Input
+							name="lastname"
+							placeholder="enter your lastname"
+							type="text"
+						/>
+						<div className="flex gap-2 items-center rounded-md border border-white p-1">
+							<Input
+								className="border-0 b"
+								name="code"
+								placeholder="enter your register code"
+								type="text"
+							/>
+							<Button asChild>
+								<a
+									href="https://wa.link/812h7w"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Get code
+								</a>
+							</Button>
+						</div>
+
+						<Button
+							className="bg-red-800 text-white hover:bg-red-600"
+							onClick={() => setIsOpen(false)}
+						>
+							Continue
+						</Button>
+					</form>
 					<DialogFooter className="grid">
 						<p>
 							it is also important for you to join our verfied social handles

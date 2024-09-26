@@ -16,9 +16,8 @@ import {
 } from "@/components/ui/select";
 import FormAction from "./actions";
 import { useFormState } from "react-dom";
-import { stat } from "fs";
 
-export function SelectDemo() {
+function SelectDemo() {
 	return (
 		<Select>
 			<SelectTrigger className=" border-gray-600">

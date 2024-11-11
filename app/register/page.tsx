@@ -225,7 +225,7 @@ const StepThree = ({
 				<p>Don't have a code?</p>
 				<a
 					className="text-orange-500"
-					href="https://wa.link/r0h2l3"
+					href="https://wa.link/m8j44x"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
